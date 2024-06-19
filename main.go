@@ -147,7 +147,7 @@ func main() {
 			elements := strings.Split(text, "-")
 						elementCountError(elements)
 			firstElement, secondElement := separatonOfElements(elements)
-			if romeArabicMap[strings.TrimSpace(elements[0])] > 0 || romeArabicMap[strings.TrimSpace(elements[0])] <= romeArabicMap[strings.TrimSpace(elements[1])] {
+			if romeArabicMap[strings.TrimSpace(elements[0])] == 0 || romeArabicMap[strings.TrimSpace(elements[0])] <= romeArabicMap[strings.TrimSpace(elements[1])] {
 				panic("Невозможно выдать результат так как нет римских 0 или отрицательных чисел")
 			}
 			NumberCheck(firstElement, secondElement)
